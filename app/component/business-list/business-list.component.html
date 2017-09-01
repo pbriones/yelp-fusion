@@ -1,0 +1,13 @@
+<business-search></business-search>
+
+<h2>Business List</h2>
+
+<ul>
+  <li class="business-list" *ngFor="let business of businesses$ | async">
+    <img class="business-image" src="{{business.image_url}}">
+    <a class="business-link" [routerLink]="['/business', business.id]">
+    {{business.name}}
+    </a>
+    <span>{{business.is_closed ? 'Closed': 'Open' }}</span>
+  </li>
+</ul>

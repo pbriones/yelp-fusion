@@ -1,0 +1,10 @@
+<h2>Business</h2>
+
+<div *ngIf="business">
+  <h3>{{business.name}}</h3>
+  <img src="{{business.image_url}}">
+  <p>{{business.price}}</p>
+  <p>{{business.is_closed ? "close" : "open"}}</p>
+</div>
+
+<button (click)="goBack()">Back</button>

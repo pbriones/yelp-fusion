@@ -1,0 +1,15 @@
+.business-list{
+  list-style: none;
+}
+
+.business-image{
+  height: 50px;
+  width: 50px;
+  border-radius: 50% 50% 50% 50%;
+}
+
+.business-link{
+  color: gray;
+  text-decoration: none;
+  vertical-align: top;
+}
